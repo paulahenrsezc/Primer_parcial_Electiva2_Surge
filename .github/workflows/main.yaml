@@ -3,7 +3,7 @@ name: Deploy to Surge
 on:
   push:
     branches:
-      - main  
+      - master  
 
 jobs:
   deploy:
@@ -19,4 +19,4 @@ jobs:
     - name: Deploy to Surge
       env:
         SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-      run: surge . --token $SURGE_TOKEN --domain PauLaHenrsezElectiva2Parcial.surge.sh
+      run: surge . --token $SURGE_TOKEN --domain ParcialElectiva2Paula.surge.sh
